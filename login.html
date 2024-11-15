@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- page title -->
+      <title>HERIGLOB</title>
+
+      <!-- css -->
+       <link rel="stylesheet" href="login.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+      <!-- favicon -->
+       <link rel="shortcut icon" href="/images/company logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container form-container">
+    <img src="/images/textlogo-removebg-preview.png" alt="" class="logo">
+    <h2 class="text-center mb-4 form-heading">Welcome Back</h2>
+  
+    <form>
+      <!-- Email Address Field -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email">
+      </div>
+  
+      <!-- Password Field with Visibility Toggle -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>     <a href="#" class="forgot">forgotten Password?</a>
+        <div class="input-group">
+          <input type="password" class="form-control custom-input" id="password" placeholder="Enter your password">
+          <button class="btn btn-outline-secondary toggle-btn" type="button" onclick="togglePasswordVisibility('password', 'toggleIcon1')">
+            <i id="toggleIcon1" class="fa-regular fa-eye-slash"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Terms and Conditions Checkbox -->
+      <div class="form-check mb-3">
+        <input class="form-check-input custom-checkbox" type="checkbox" id="terms">
+        <label class="form-check-label" for="terms">
+          Remember me for 30 days
+        </label>
+      </div>
+  
+      <!-- Sign Up Button -->
+      <button type="submit" class="btn btn-primary custom-btn w-100 mb-3">Login</button>
+  
+      <!-- Divider with "Or" Text -->
+      <div class="text-center my-3 divider-text">Or</div>
+  
+      <!-- Social Sign In Buttons -->
+      <div class="d-flex justify-content-center social-buttons mb-3">
+        <button class="btn btn-light custom-social-btn me-2">
+         <a href="#"> <img src="images/sign-goo.jpg" alt="Google logo"></a> 
+        </button>
+        <button class="btn btn-light custom-social-btn">
+         <a href="#"> <img src="images/sign-app.jpg" alt="Apple logo"></a> 
+        </button>
+      </div>
+  
+      <!-- Sign In Link -->
+      <div class="text-center">
+       Don't have an account? <a href="sign-up.html">Sign Up</a>
+      </div>
+    </form>
+  </div>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+</html>

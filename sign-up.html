@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- page title -->
+      <title>HERIGLOB</title>
+
+      <!-- css -->
+       <link rel="stylesheet" href="login.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+      <!-- favicon -->
+       <link rel="shortcut icon" href="/images/company logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="container form-container">
+    <h2 class="text-center mb-4 form-heading">Get Started Now</h2>
+  
+    <form>
+      <!-- Name Field -->
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control custom-input" id="name" placeholder="Enter your name">
+      </div>
+  
+      <!-- Select Trade Role with Checkboxes -->
+      <div class="mb-3">
+        <label class="form-label">Select Trade Role</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input custom-checkbox" type="checkbox" id="buyer" value="Buyer">
+          <label class="form-check-label" for="buyer">Buyer</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input custom-checkbox" type="checkbox" id="seller" value="Seller">
+          <label class="form-check-label" for="seller">Seller</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input custom-checkbox" type="checkbox" id="both" value="Both">
+          <label class="form-check-label" for="both">Both</label>
+        </div>
+      </div>
+  
+      <!-- Phone Number -->
+      <div class="mb-3">
+        <label for="phoneNumber" class="form-label">Phone number</label>
+        <div class="input-group phone-group">
+          <select class="form-select flag-dropdown custom-select" id="countrySelect">
+            <option value="+234" selected>🇳🇬 Nigeria</option>
+            <option value="+254">🇰🇪 Kenya</option>
+            <option value="+27">🇿🇦 South Africa</option>
+            <option value="+255">🇹🇿 Tanzania</option>
+            <option value="+233">🇬🇭 Ghana</option>
+            <option value="+216">🇹🇳 Tunisia</option>
+            <!-- Major European countries -->
+            <option value="+44">🇬🇧 United Kingdom</option>
+            <option value="+33">🇫🇷 France</option>
+            <option value="+49">🇩🇪 Germany</option>
+            <option value="+39">🇮🇹 Italy</option>
+            <option value="+34">🇪🇸 Spain</option>
+            <!-- Major Asian countries -->
+            <option value="+91">🇮🇳 India</option>
+            <option value="+81">🇯🇵 Japan</option>
+            <option value="+86">🇨🇳 China</option>
+            <option value="+62">🇮🇩 Indonesia</option>
+            <option value="+82">🇰🇷 South Korea</option>
+            <!-- Major American countries -->
+            <option value="+1">🇺🇸 United States</option>
+            <option value="+52">🇲🇽 Mexico</option>
+            <option value="+55">🇧🇷 Brazil</option>
+            <option value="+1">🇨🇦 Canada</option>
+            <!-- Additional countries here -->
+          </select>
+          <span class="input-group-text custom-input-group-text" id="countryCode">+234</span>
+          <input type="text" class="form-control custom-input" id="phoneNumber" placeholder="Enter your phone number">
+        </div>
+      </div>
+
+      <!-- Email Address Field -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control custom-input" id="email" placeholder="Enter your email">
+      </div>
+  
+      <!-- Password Field with Visibility Toggle -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <div class="input-group">
+          <input type="password" class="form-control custom-input" id="password" placeholder="Enter your password">
+          <button class="btn btn-outline-secondary toggle-btn" type="button" onclick="togglePasswordVisibility('password', 'toggleIcon1')">
+            <i id="toggleIcon1" class="fa-regular fa-eye-slash"></i>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Confirm Password Field with Visibility Toggle -->
+      <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Confirm Password</label>
+        <div class="input-group">
+          <input type="password" class="form-control custom-input" id="confirmPassword" placeholder="Confirm your password">
+          <button class="btn btn-outline-secondary toggle-btn" type="button" onclick="togglePasswordVisibility('confirmPassword', 'toggleIcon2')">
+            <i id="toggleIcon2" class="fa-regular fa-eye-slash"></i>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Terms and Conditions Checkbox -->
+      <div class="form-check mb-3">
+        <input class="form-check-input custom-checkbox" type="checkbox" id="terms">
+        <label class="form-check-label" for="terms">
+          I agree to the terms & policy
+        </label>
+      </div>
+  
+      <!-- Sign Up Button -->
+      <button type="submit" class="btn btn-primary custom-btn w-100 mb-3">Sign Up</button>
+  
+      <!-- Divider with "Or" Text -->
+      <div class="text-center my-3 divider-text">Or</div>
+  
+      <!-- Social Sign In Buttons -->
+      <div class="d-flex justify-content-center social-buttons mb-3">
+        <button class="btn btn-light custom-social-btn me-2">
+         <a href="#"> <img src="images/sign-goo.jpg" alt="Google logo"></a> 
+        </button>
+        <button class="btn btn-light custom-social-btn">
+         <a href="#"> <img src="images/sign-app.jpg" alt="Apple logo"></a> 
+        </button>
+      </div>
+  
+      <!-- Sign In Link -->
+      <div class="text-center">
+        Have an account? <a href="login.html">Sign In</a>
+      </div>
+    </form>
+  </div>
+
+   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
